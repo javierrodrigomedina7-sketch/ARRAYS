@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #display {
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arrays en Javascript</h1>
+    <div id="display">
+    </div>
+    <script>
+        let alineacionRMadrid=
+        ["Benzema", "MBappé", "Butragueño", "Raúl", "Zidane", "Ronaldo" ];
+        alineacionRMadrid.push ("Di Estéfano");//agrega un elemento
+        /*alineacionRMadrid.pop();
+        alineacionRMadrid.pop();
+        alineacionRMadrid.unshift("Ronaldo");
+        alineacionRMadrid.shift();
+        alineacionRMadrid.shift();
+        alineacionRMadrid.splice(2,2);
+        alineacionRMadrid.sort();*/
+        alineacionRMadrid.reverse();
+
+
+        for (jugador of alineacionRMadrid){
+            document.getElementById("display").innerHTML = document.getElementById("display").innerHTML + " - " + jugador;
+        }
+
+        
+    </script>
+</body>
+</html>
